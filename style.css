@@ -9,13 +9,9 @@ body {
 }
 
 nav {
-<<<<<<< HEAD
   background-color: #fff;
-  
-=======
   height: 80px;
   width: 100vw;
   background-color: #fff;
   position: fixed;
->>>>>>> 78a81dd3e203592f028d55afe8385cb72ca543c1
 }
