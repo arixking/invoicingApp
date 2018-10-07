@@ -9,9 +9,13 @@ body {
 }
 
 nav {
-  background-color: #fff;
-  height: 80px;
+  height: 64px;
   width: 100vw;
-  background-color: #fff;
   position: fixed;
+  background-color: #fff;
+  box-shadow: 8px 16px -4px rgba(0, 0, 0, 0.01);
+}
+
+.invoice_generator {
+  margin-top: 144px;
 }
