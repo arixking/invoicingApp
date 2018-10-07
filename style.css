@@ -12,10 +12,13 @@ nav {
   height: 64px;
   width: 100vw;
   position: fixed;
+  top: 0px;
   background-color: #fff;
   box-shadow: 8px 16px -4px rgba(0, 0, 0, 0.01);
 }
 
 .invoice_generator {
+  width: 100vw;
+  max-width: 1200px;
   margin-top: 144px;
 }
