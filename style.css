@@ -9,6 +9,8 @@ body {
 }
 
 nav {
+  height: 80px;
+  width: 100vw;
   background-color: #fff;
-  
+  position: fixed;
 }
