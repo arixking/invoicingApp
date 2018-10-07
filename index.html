@@ -40,18 +40,24 @@
               <input type="text" placeholder="Description" />
               <input type="text" placeholder="Quantity" />
               <input type="text" placeholder="Rate" />
-        
+
       </ol>
       <br />
-      <button> + </button>
+      <button id="addItemLine" > + </button>
       <hr />
       <!-- BOTTOM SECTION  -->
       <input type="text" placeholder="Notes" />
       <br />
       <input type="text" placeholder="Terms" />
-
+      <br />
+      <button id="printInvoice" > Download Invoice </button>
     </div>
 
+    <script>
+    const pdf = new jsPDF();
+    let printInvoice = document.querySelector('printInvoice')
+
+    </script>
     <!-- Javascript References -->
     <script src="js/invoice-calc.js"></script>
   </body>
