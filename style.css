@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #F8FAFB;
+}
+
+nav {
+  background-color: #fff;
+  
+}
