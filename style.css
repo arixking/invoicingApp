@@ -6,6 +6,7 @@
 
 body {
   background-color: #F8FAFB;
+  margin: 0px;
 }
 
 nav {
@@ -14,17 +15,47 @@ nav {
   position: fixed;
   top: 0px;
   background-color: #fff;
+  border-bottom: solid 1px #ddd;
   /* box-shadow: 8px 16px -4px rgba(0, 0, 0, 0.01); WRONG SYNTAX */
+}
+
+input {
+  height: 40px;
+  border-radius: 4px;
+  border: solid 1px rgb(70, 70, 70);
+  padding: 0px 8px;
 }
 
 .invoice_generator {
   width: 100vw;
   max-width: 1200px;
-  margin: auto;
-  margin-top: 144px;
+  margin: 144px auto;
+  padding: 0px 20px;
 }
 
 .invoice_container {
+  /* DELETE LATER */
+  min-height: 100vh;
   padding: 20px;
   background-color: #fff;
+  border-radius: 8px;
+}
+
+.logo_container {
+  height: 64px;
+  width: 64px;
+  border-right: solid 1px #ddd;
+}
+
+.primary-CTA {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(88, 99, 251);
+  border: 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  margin: 24px 0px;
 }
