@@ -19,20 +19,33 @@
 
     <section class="invoice_generator">
       <div class="invoice_container">
-        
+
         <!-- TOP SECTION -->
         <h1>Ohhhh yeah invoicessss</h1>
         <div class="top_section">
-          <div>
-            <input type="text" placeholder="Your Name" />
-            <input type="text" placeholder="Your Address" />
-            <input type="text" placeholder="Client Name" />
-            <input type="text" placeholder="Client Adress" />
+          <div class="top_section-personalDetails">
+            <label for="yourName">Your Name</label>
+            <input type="text" id="yourName" placeholder="ex. Phil King" />
+
+            <label for="yourAddress">Your Address</label>
+            <textarea type="text" id="yourAddress" placeholder="Your Address"></textarea>
+
+            <label for="clientName">Client's Name</label>
+            <input type="text" id="clientName" placeholder="Client Name" />
+
+            <label for="clientAddress">Client's Address</label>
+            <textarea type="text" id="clientAddress" placeholder="Client Address"></textarea>
           </div>
-          <div>
-            <input type="text" placeholder="Invoice Number" />
-            <input type="text" placeholder="Date" />
-            <input type="text" placeholder="Due Date" />
+
+          <div class="top_section-invoiceDetails">
+            <label for="invoiceNumber">Invoice</label>
+            <input type="number" id="invoiceNumber" placeholder="Invoice Number" />
+
+            <label for="currentDate">Current Date</label>
+            <input type="date" id="currentDate" placeholder="Date" />
+
+            <label for="dueDate">Due Date</label>
+            <input type="date" id="dueDate" placeholder="Due Date" />
           </div>
         </div>
 
@@ -42,10 +55,12 @@
         <b1>Items</b1>
         <ol>
           <li>
-              <input type="text" placeholder="Item Name" />
-              <input type="text" placeholder="Description" />
-              <input type="text" placeholder="Quantity" />
-              <input type="text" placeholder="Rate" />
+              <label for=""></label>
+              <input type="text" id="itemName" placeholder="Item Name" />
+              <label for=""></label>
+              <input type="number" id="itemQuantity" placeholder="Quantity" />
+              <label for=""></label>
+              <input type="number" id="itemRate" placeholder="Rate" />
         </ol>
         <button> + </button>
         <hr />

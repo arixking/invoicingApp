@@ -1,3 +1,5 @@
+/* HTML Elements */
+
 * {
   box-sizing: border-box;
   font-family: "Open Sans", helvetica, sans-serif;
@@ -24,7 +26,20 @@ input {
   border-radius: 4px;
   border: solid 1px rgb(70, 70, 70);
   padding: 0px 8px;
+  margin: 8px 0px 24px 0px;
 }
+
+/* Styled Elements */
+
+/* Nav Styles */
+
+.logo_container {
+  height: 64px;
+  width: 64px;
+  border-right: solid 1px #ddd;
+}
+
+/* Form Styles */
 
 .invoice_generator {
   width: 100vw;
@@ -34,17 +49,32 @@ input {
 }
 
 .invoice_container {
-  /* DELETE LATER */
-  min-height: 100vh;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
 }
 
-.logo_container {
-  height: 64px;
-  width: 64px;
-  border-right: solid 1px #ddd;
+/* Form Sections */
+.top_section {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+}
+
+.top_section-personalDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: auto;
+}
+
+.top_section-invoiceDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex: auto;
 }
 
 .primary-CTA {
