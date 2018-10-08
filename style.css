@@ -54,11 +54,20 @@ input {
   border-radius: 8px;
 }
 
+.address-field {
+  height: 80px;
+  border-radius: 4px;
+  border: solid 1px rgb(70, 70, 70);
+  padding: 8px 8px;
+  margin: 8px 0px 24px 0px;
+  line-height: 24px;
+}
+
 /* Form Sections */
 .top_section {
   display: flex;
   flex-direction: row;
-  height: 400px;
+  /* height: 400px; */
 }
 
 .top_section-personalDetails {
