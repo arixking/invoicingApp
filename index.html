@@ -60,12 +60,12 @@
             <ol id="itemList">
               <li id="lineItem">
                 <label for=""></label>
-                <input type="text" id="itemName" placeholder="Item Name" />
+                <input class="item_input-field" type="text" id="itemName" placeholder="Item Name" />
                 <label for=""></label>
-                <input type="number" id="itemQuantity" placeholder="Quantity" />
+                <input class="item_input-field" type="number" id="itemQuantity" placeholder="Quantity" />
                 <label for=""></label>
-                <input type="number" id="itemRate" placeholder="Rate" onblur="calculate()" />
-                <input type="number" id="itemTotal" placeholder="0" readonly />
+                <input class="item_input-field" type="number" id="itemRate" placeholder="Rate" onblur="calculate()" />
+                <input class="item_input-field" type="number" id="itemTotal" placeholder="0" readonly />
               </li>
             </ol>
             <button class="add-item_button" onclick="addItem()"> Add Item </button>
@@ -76,11 +76,11 @@
         <div class="bot_section">
           <div class="notes_container">
             <label for="invoiceNotes">Notes</label>
-            <input type="text" id="invoiceNotes" placeholder="Notes" />
+            <textarea type="text" id="invoiceNotes" placeholder="Notes" class="bot-section_input"></textarea>
           </div>
           <div class="terms_container">
             <label for="invoiceTerms">Terms</label>
-            <input type="text" id="invoiceTerms" placeholder="Terms" />
+            <textarea type="text" id="invoiceTerms" placeholder="Terms" class="bot-section_input"></textarea>
           </div>
         </div>
       </div>
