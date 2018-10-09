@@ -21,7 +21,6 @@
       <div class="invoice_container">
 
         <!-- TOP SECTION -->
-        <h1>Ohhhh yeah invoicessss</h1>
         <div class="top_section">
           <div class="top_section-personalDetails">
             <label for="yourName">Your Name</label>
@@ -52,27 +51,37 @@
         <hr />
 
         <!-- MIDDLE SECTION -->
-        <b1>Items</b1>
-        <ol>
-          <li>
-              <label for=""></label>
-              <input type="text" id="itemName" placeholder="Item Name" />
-              <label for=""></label>
-              <input type="number" id="itemQuantity" placeholder="Quantity" />
-              <label for=""></label>
-              <input type="number" id="itemRate" placeholder="Rate" onblur="calculate()" />
-              <input type="number" id="itemTotal" placeholder="0" readonly />
-        </ol>
-        <button> + </button>
-        <hr />
+        <div class="mid_section">
+          <b1>Items</b1>
+          <ol>
+            <li>
+                <label for=""></label>
+                <input type="text" id="itemName" placeholder="Item Name" />
+                <label for=""></label>
+                <input type="number" id="itemQuantity" placeholder="Quantity" />
+                <label for=""></label>
+                <input type="number" id="itemRate" placeholder="Rate" onblur="calculate()" />
+                <input type="number" id="itemTotal" placeholder="0" readonly />
+          </ol>
+          <button type="button" class="add-item_button"> + Add Item </button>
+          <hr />
+        </div>
         <!-- BOTTOM SECTION  -->
-        <input type="text" placeholder="Notes" />
-        <br />
-        <input type="text" placeholder="Terms" />
-
+        <div class="bot_section">
+          <div class="notes_container">
+            <label for="invoiceNotes">Notes</label>
+            <input type="text" id="invoiceNotes" placeholder="Notes" />
+          </div>
+          <div class="terms_container">
+            <label for="invoiceTerms">Terms</label>
+            <input type="text" id="invoiceTerms" placeholder="Terms" />
+          </div>
+        </div>
       </div>
-      <div class="">
-        <button type="button" name="button" class="primary-CTA">GENERATE PDF</button>
+      <div class="generator_info">
+        <div class="info-contents">
+          <button type="button" name="button" class="primary-CTA">GENERATE PDF</button>
+        </div>
       </div>
     </section>
 
