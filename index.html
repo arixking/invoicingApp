@@ -23,17 +23,20 @@
         <!-- TOP SECTION -->
         <div class="top_section">
           <div class="top_section-personalDetails">
-            <label for="yourName">Your Name</label>
-            <input type="text" id="yourName" placeholder="ex. Phil King" />
+            <div class="personalDetails_yourDetails">
+              <label for="yourName">Your Name</label>
+              <input type="text" id="yourName" placeholder="ex. Phil King" />
 
-            <label for="yourAddress">Your Address</label>
-            <textarea type="text" id="yourAddress" class="address-field" placeholder="Your Address"></textarea>
+              <label for="yourAddress">Your Address</label>
+              <textarea type="text" id="yourAddress" class="address-field" placeholder="Your Address"></textarea>
+            </div>
+            <div class="personalDetails_clientDetails">
+              <label for="clientName">Client's Name</label>
+              <input type="text" id="clientName" placeholder="Client Name" />
 
-            <label for="clientName">Client's Name</label>
-            <input type="text" id="clientName" placeholder="Client Name" />
-
-            <label for="clientAddress">Client's Address</label>
-            <textarea type="text" id="clientAddress" class="address-field" placeholder="Client Address"></textarea>
+              <label for="clientAddress">Client's Address</label>
+              <textarea type="text" id="clientAddress" class="address-field" placeholder="Client Address"></textarea>
+            </div>
           </div>
 
           <div class="top_section-invoiceDetails">
@@ -48,13 +51,14 @@
           </div>
         </div>
 
-        <hr />
-
         <!-- MIDDLE SECTION -->
         <div class="mid_section">
-          <b1>Items</b1>
-          <ol>
-            <li>
+          <div class="section_heading">
+            <p>Items</p>
+          </div>
+          <div class="list_container">
+            <ol id="itemList">
+              <li id="lineItem">
                 <label for=""></label>
                 <input type="text" id="itemName" placeholder="Item Name" />
                 <label for=""></label>
@@ -62,10 +66,12 @@
                 <label for=""></label>
                 <input type="number" id="itemRate" placeholder="Rate" onblur="calculate()" />
                 <input type="number" id="itemTotal" placeholder="0" readonly />
-          </ol>
-          <button type="button" class="add-item_button"> + Add Item </button>
-          <hr />
+              </li>
+            </ol>
+            <button class="add-item_button" onclick="addItem()"> Add Item </button>
+          </div>
         </div>
+
         <!-- BOTTOM SECTION  -->
         <div class="bot_section">
           <div class="notes_container">
@@ -87,5 +93,6 @@
 
     <!-- Javascript References -->
     <script src="js/invoice-calc.js"></script>
+
   </body>
 </html>
