@@ -10,11 +10,17 @@ function calculate() {
 
 
 function addItem() {
-    var elmnt = document.getElementById("lineItem");
+    var elmnt = document.getElementById("lineItem"+itemCount);
     var cln = elmnt.cloneNode(true);
+    var itemQuantityTemp = document.getElementById("itemQuantity"+itemCount)
+    var itemRateTemp = document.getElementById("itemRate"+itemCount)
+    itemCount = itemCount + 1;
 
-    itemCount = itemCount + 1
-    cln.id = ("lineItem_"+itemCount);
+    cln.id = ("lineItem"+itemCount);
+
     document.getElementById("itemList").appendChild(cln);
-    itemName = ("itemName"+itemCount)
+
+    itemQuantityTemp.id = "itemQuantity"+itemCount;
+    itemRateTemp.id = "itemRate"+itemCount;
+
 }
