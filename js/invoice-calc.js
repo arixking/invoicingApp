@@ -2,7 +2,7 @@
 var itemCount = 0
 
 function calculate() {
-  var resources = document.getElementById("itemQuantity").value;
+  var resources = document.getElementById("itemQuantity"+itemCount).value;
   var minutes = document.getElementById("itemRate").value;
   document.getElementById('itemTotal').value = parseInt(resources)*parseInt(minutes);
 }

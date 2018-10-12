@@ -7,18 +7,21 @@
 }
 
 body {
-  background-color: #F8FAFB;
+  background-color: #e0e0e0;
   margin: 0px;
 }
 
 nav {
   height: 64px;
-  width: 100vw;
+  width: calc(100vw - 40px);
+  margin: 20px;
   position: fixed;
   top: 0px;
   background-color: #fff;
-  border-bottom: solid 1px #ddd;
-  box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.2);
+  /* border-bottom: solid 1px #ddd; */
+  box-shadow: 0px 8px 16px -8px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  z-index: 10000;
 }
 
 input {
@@ -35,6 +38,14 @@ p {
 
 ol {
   padding-left: 20px;
+}
+
+label {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 10px;
 }
 
 /* Styled Elements */
@@ -55,6 +66,13 @@ ol {
   width: 24px;
 }
 
+/* Footer Styles */
+.footer {
+  border-top: 1px solid black;
+  height: 400px;
+
+}
+
 /* Form Styles */
 
 .invoice_generator {
@@ -69,11 +87,13 @@ ol {
 .invoice_container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   background-color: #fff;
   border-radius: 4px;
   width: 940px;
+  min-height: 1216px;
   box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .generator_info {
