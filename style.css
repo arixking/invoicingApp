@@ -7,8 +7,13 @@
 }
 
 body {
-  background-color: #e0e0e0;
+  background-color: #fafafa;
   margin: 0px;
+}
+
+/* Prevents overscroll */
+body {
+  overscroll-behavior-y: none;
 }
 
 nav {
@@ -22,12 +27,16 @@ nav {
   box-shadow: 0px 8px 16px -8px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   z-index: 10000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 input {
   height: 40px;
   border-radius: 4px;
-  border: solid 1px rgb(70, 70, 70);
+  border: solid 1px rgb(70, 70, 70, .2);
   padding: 0px 8px;
   margin: 8px 0px 24px 0px;
 }
@@ -66,12 +75,21 @@ label {
   width: 24px;
 }
 
+.hero_bg {
+  width: 100vw;
+  height: auto;
+  position: fixed;
+  top: 0;
+  z-index: -1000;
+}
+
 /* Footer Styles */
 .footer {
-  border-top: 1px solid black;
-  height: 400px;
-
+  border-top: 1px solid rgb(130, 130, 130, .2);
+  height: 80px;
 }
+
+
 
 /* Form Styles */
 
@@ -81,7 +99,8 @@ label {
   margin: 144px auto;
   padding: 0px 20px;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .invoice_container {
@@ -96,20 +115,10 @@ label {
   position: relative;
 }
 
-.generator_info {
-  padding: 0px 20px;
-  max-width: 220px;
-}
-
-.info-contents {
-  position: sticky;
-  top: 144px;
-}
-
 .address-field {
   height: 80px;
   border-radius: 4px;
-  border: solid 1px rgb(70, 70, 70);
+  border: solid 1px rgb(70, 70, 70, .2);
   padding: 8px 8px;
   margin: 8px 0px 24px 0px;
   line-height: 24px;
@@ -126,7 +135,8 @@ label {
 .mid_section {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content:
 }
 
 .bot_section {
@@ -190,8 +200,8 @@ label {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 2px;
-  border-radius: 4px;
-  padding: 16px 16px;
+  border-radius: 0px 4px 4px 0px;
+  padding: 0px 24px;
 }
 
 .add-item_button {
@@ -213,7 +223,7 @@ label {
 .bot-section_input {
   height: 160px;
   border-radius: 4px;
-  border: solid 1px rgb(70, 70, 70);
+  border: solid 1px rgb(70, 70, 70, .2);
   padding: 8px 8px;
   margin: 8px 0px 24px 0px;
   line-height: 24px;
